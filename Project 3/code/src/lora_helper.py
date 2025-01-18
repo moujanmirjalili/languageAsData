@@ -11,7 +11,7 @@ def forward_for_classification(model, input_ids, attention_mask, device):
 
 
 @torch.no_grad()
-def calc_accuracy(loader, model, device, max_batches=None):
+def calc_accuracy(loader, model, device, max_batches=None,is_dry=False):
     model.eval()
     correct, total = 0, 0
     #for i, instance in enumerate(loader):
@@ -37,6 +37,8 @@ def calc_accuracy(loader, model, device, max_batches=None):
         preds = torch.argmax(logits, dim=-1)
         correct += (preds == y_batch).sum().item()
         total += y_batch.size(0)
+        if is_dry:
+            break
     return correct / total if total > 0 else 0
 
 
