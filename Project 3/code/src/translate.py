@@ -37,21 +37,29 @@ def zero_shot(sentence,model,tokenizer,device,start_lang="Persian", target_langu
     #if "German:" in gen_text:
      #   gen_text = gen_text.split("German:")[-1].strip()
     start_marker = target_language+":"
+    gen_text_original = gen_text
     if start_marker in gen_text:
         gen_text = gen_text.split(start_marker)[-1].split("\n")[0].strip()
+        if gen_text == "" or gen_text.rstrip() == "":
+            #print("Solution seems to be empty Original Output was:\n" +gen_text_original)
+            return False , gen_text_original
     else:
-        return None 
+        return False , gen_text_original
 
-    return  gen_text.rstrip()
+    return  True , gen_text.rstrip()
 
 def translate_multiple(sentence_l,model,tokenizer,device,start_lang="Persian", target_language="English"):
     for index, sentence in enumerate(sentence_l):
         #print(type(sentence))
-        result = zero_shot(sentence,model,tokenizer,device,start_lang=start_lang, target_language=target_language)
+        #if index + 1 != 34:
+        #    continue 
+        has_result, result = zero_shot(sentence,model,tokenizer,device,start_lang=start_lang, target_language=target_language)
+
         if result: 
             print(f"[{index+1}]{sentence} \n[{index+1}] {result}")
         else: 
-            print("No Result Found")
+            print(f"[{index+1}]{sentence} \n[{index+1}] No Result Ouptut was:\n {result}")
+            print("----")
 
 
 
