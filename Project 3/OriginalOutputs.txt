@@ -1,0 +1,1878 @@
+_____________
+Size Output: 104
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: لطفاً پنجره را باز کنید.
+English: Please open the window.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[1]لطفاً پنجره را باز کنید. 
+[1] Please open the window.
+_____________
+Size Output: 99
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: پنجره رو باز کن.
+English: Open the window.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[2]پنجره رو باز کن. 
+[2] Open the window.
+_____________
+Size Output: 105
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: آیا می‌توانید به من کمک کنید؟
+English: How can I help you?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[3]آیا می‌توانید به من کمک کنید؟ 
+[3] How can I help you?
+_____________
+Size Output: 102
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: می‌تونی کمکم کنی؟
+English: I can help you?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[4]می‌تونی کمکم کنی؟ 
+[4] I can help you?
+_____________
+Size Output: 107
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: لطفاً دفتر خود را به من بدهید.
+English: Please let me know your office.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[5]لطفاً دفتر خود را به من بدهید. 
+[5] Please let me know your office.
+_____________
+Size Output: 100
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: دفتر‌تو بده.
+English: I will give you my office.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[6]دفتر‌تو بده. 
+[6] I will give you my office.
+_____________
+Size Output: 108
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: آیا امکانش هست که چند دقیقه صبر کنید؟
+English: Is it possible to wait for a few minutes?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[7]آیا امکانش هست که چند دقیقه صبر کنید؟ 
+[7] Is it possible to wait for a few minutes?
+_____________
+Size Output: 105
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: میشه یه لحظه صبر کنی؟
+English: Can you wait for a moment?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[8]میشه یه لحظه صبر کنی؟ 
+[8] Can you wait for a moment?
+_____________
+Size Output: 101
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: امروز هوا آفتابی است.
+English: Today the weather is sunny.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[9]امروز هوا آفتابی است. 
+[9] Today the weather is sunny.
+_____________
+Size Output: 103
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: سیستم عامل نیاز به بروزرسانی دارد.
+English: The operating system needs to be updated.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[10]سیستم عامل نیاز به بروزرسانی دارد. 
+[10] The operating system needs to be updated.
+_____________
+Size Output: 102
+During Output The Modle Hit an Output Limit
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: من عاشق کتاب خواندن هستم.
+English: I am a lover of reading.
+You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: من عاش
+[11]من عاشق کتاب خواندن هستم. 
+[11] I am a lover of reading.
+_____________
+Size Output: 147
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: هیلوم نقطه‌ای است که در آن شریان‌های حامل مواد مغذی و لنفوسیت‌ها وارد غده لنفاوی می‌شوند و سیاهرگ‌ها از غده لنفاوی خارج می‌شوند.
+English: a point in which the blood vessels that carry nutrients and leukocytes enter the gland of the liver.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[12]هیلوم نقطه‌ای است که در آن شریان‌های حامل مواد مغذی و لنفوسیت‌ها وارد غده لنفاوی می‌شوند و سیاهرگ‌ها از غده لنفاوی خارج می‌شوند. 
+[12] a point in which the blood vessels that carry nutrients and leukocytes enter the gland of the liver.
+_____________
+Size Output: 104
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: یک فنجان قهوه لطفاً.
+English: A cup of tea please.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[13]یک فنجان قهوه لطفاً. 
+[13] A cup of tea please.
+_____________
+Size Output: 124
+During Output The Modle Hit an Output Limit
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: خیار فسخ اصطلاحی در فقه و حقوق به معنای حق برهم‌زدن یک‌جانبه قرارداد است.
+English: Termination of a Contract
+English: Termination of a Contract
+English: Termination of a Contract
+English: Termination of a Contract
+English: Termination of a Contract
+English: Termination of a Cont
+[14]خیار فسخ اصطلاحی در فقه و حقوق به معنای حق برهم‌زدن یک‌جانبه قرارداد است. 
+[14] Termination of a Cont
+_____________
+Size Output: 102
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: من به خرید می‌روم.
+English: I want to buy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[15]من به خرید می‌روم. 
+[15] I want to buy.
+_____________
+Size Output: 123
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: انرژی جنبشی عبارت است از کار مورد نیاز برای شتاب دادن به جرم جسم برای رسیدن به سرعت مورد نظر از حالت سکون.
+English: Static energy refers to the required work to accelerate the body for reaching the desired speed.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[16]انرژی جنبشی عبارت است از کار مورد نیاز برای شتاب دادن به جرم جسم برای رسیدن به سرعت مورد نظر از حالت سکون. 
+[16] Static energy refers to the required work to accelerate the body for reaching the desired speed.
+_____________
+Size Output: 100
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: من به خانه رفتم.
+English: I went to the house.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[17]من به خانه رفتم. 
+[17] I went to the house.
+_____________
+Size Output: 108
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: بعد از این که کارم تمام شد، به خانه رفتم.
+English: After I finished my work, I went to the house.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[18]بعد از این که کارم تمام شد، به خانه رفتم. 
+[18] After I finished my work, I went to the house.
+_____________
+Size Output: 100
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: او آن کتاب را خرید.
+English: I bought the book.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[19]او آن کتاب را خرید. 
+[19] I bought the book.
+_____________
+Size Output: 106
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: او کتابی را که دیروز دیدم خرید.
+English: I bought a book yesterday.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[20]او کتابی را که دیروز دیدم خرید. 
+[20] I bought a book yesterday.
+_____________
+Size Output: 98
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: ما فیلم دیدیم.
+English: We watched the movie.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[21]ما فیلم دیدیم. 
+[21] We watched the movie.
+_____________
+Size Output: 111
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: وقتی باران تمام شد، ما به تماشای فیلم رفتیم.
+English: When the rain stopped, we went to see the movie.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[22]وقتی باران تمام شد، ما به تماشای فیلم رفتیم. 
+[22] When the rain stopped, we went to see the movie.
+_____________
+Size Output: 97
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: او دوید.
+English: I ride.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[23]او دوید. 
+[23] I ride.
+_____________
+Size Output: 108
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: او به سمت درختی که در دوردست بود دوید.
+English: He went to the tree that was in the dirt.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[24]او به سمت درختی که در دوردست بود دوید. 
+[24] He went to the tree that was in the dirt.
+_____________
+Size Output: 102
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: من امروز صبح ورزش کردم.
+English: Today I was exercising.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[25]من امروز صبح ورزش کردم. 
+[25] Today I was exercising.
+_____________
+Size Output: 102
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: من هر روز ورزش می‌کنم.
+English: I exercise every day.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[26]من هر روز ورزش می‌کنم. 
+[26] I exercise every day.
+_____________
+Size Output: 102
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: فردا صبح ورزش خواهم کرد.
+English: Tomorrow I will go to the gym.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[27]فردا صبح ورزش خواهم کرد. 
+[27] Tomorrow I will go to the gym.
+_____________
+Size Output: 99
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: او کتابی خواند.
+English: He read a book.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[28]او کتابی خواند. 
+[28] He read a book.
+_____________
+Size Output: 101
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: او کتابی می‌خواند.
+English: He reads a book.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[29]او کتابی می‌خواند. 
+[29] He reads a book.
+_____________
+Size Output: 100
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: او کتابی خواهد خواند.
+English: He will read a book.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[30]او کتابی خواهد خواند. 
+[30] He will read a book.
+_____________
+Size Output: 103
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: ما به رستوران رفتیم.
+English: We went to the restaurant.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[31]ما به رستوران رفتیم. 
+[31] We went to the restaurant.
+_____________
+Size Output: 101
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: ما در رستوران هستیم.
+English: We are in the restaurant.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[32]ما در رستوران هستیم. 
+[32] We are in the restaurant.
+_____________
+Size Output: 102
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: ما به رستوران خواهیم رفت.
+English: We will go to the restaurant.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[33]ما به رستوران خواهیم رفت. 
+[33] We will go to the restaurant.
+_____________
+Size Output: 100
+During Output The Modle Hit an Output Limit
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: خیلی زرنگی شما.
+English: You are a very good translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: خیلی زرنگی شما.
+English:
+[34]خیلی زرنگی شما. 
+[34] You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: خیلی زرنگی شما.
+English: You are a very good translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: خیلی زرنگی شما.
+English:
+_____________
+Size Output: 104
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: بخشش لازم نیست اعدامش کنید.
+English: It is not necessary to punish the murderer.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[35]بخشش لازم نیست اعدامش کنید. 
+[35] It is not necessary to punish the murderer.
+_____________
+Size Output: 114
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: و تو چون مصرع شعری زیبا، سطر برجسته‌ای از زندگی من هستی
+English: I am a beautiful Persian verse, a line of life I have.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[36]و تو چون مصرع شعری زیبا، سطر برجسته‌ای از زندگی من هستی 
+[36] I am a beautiful Persian verse, a line of life I have.
+_____________
+Size Output: 110
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: هرچند خسته بودم، تا آخر شب بیدار ماندم.
+English: I was tired, until the end of the night.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[37]هرچند خسته بودم، تا آخر شب بیدار ماندم. 
+[37] I was tired, until the end of the night.
+_____________
+Size Output: 107
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: اگر برف نبارد، به پارک می‌رویم.
+English: If snow falls, we go to the park.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[38]اگر برف نبارد، به پارک می‌رویم. 
+[38] If snow falls, we go to the park.
+_____________
+Size Output: 107
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: کتابی که دیروز خریدی، کجاست؟
+English: A book you bought yesterday, where is it?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[39]کتابی که دیروز خریدی، کجاست؟ 
+[39] A book you bought yesterday, where is it?
+_____________
+Size Output: 108
+Original Output: You are a helpful translator. Please translate the following Persian sentence into English. Do not add any extra text or explanations. Only provide the translation. 
+
+Persian: من صلاح نمی‌بینم که آنها حرف بزنند. 
+English: I don’t know how they say. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[40]من صلاح نمی‌بینم که آنها حرف بزنند.  
+[40] I don’t know how they say.
