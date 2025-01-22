@@ -1,0 +1,146 @@
+Skip to main panel
+>
+/ex3/src/
+Name
+Modified
+
+# %%
+
+import torch.nn as nn
+from transformers import GPT2ForSequenceClassification, GPT2Config
+#tokenizer.pad_token = tokenizer.eos_token
+from src.lora_helper import calc_accuracy,forward_for_classification
+
+model_name = "gpt2"
+num_labels = 2
+model_config = GPT2Config.from_pretrained(model_name, num_labels=num_labels)
+model = GPT2ForSequenceClassification.from_pretrained(model_name, config=model_config)
+model.config.pad_token_id = tokenizer.pad_token_id 
+model.to(device)
+model.eval()
+
+
+model_no_pre = GPT2ForSequenceClassification(model_config)
+model_no_pre.config.pad_token_id = tokenizer.pad_token_id
+model_no_pre.to(device)
+model_no_pre.eval()
+
+init_train_acc_no_pre = calc_accuracy(train_loader, model_no_pre, device, max_batches=10)
+init_val_acc_no_pre  = calc_accuracy(val_loader, model_no_pre, device, max_batches=10)
+init_test_acc_no_pre  = calc_accuracy(test_loader, model, device, max_batches=10)
+
+
+init_train_acc = calc_accuracy(train_loader, model, device, max_batches=10)
+init_val_acc   = calc_accuracy(val_loader, model, device, max_batches=10)
+init_test_acc  = calc_accuracy(test_loader, model, device, max_batches=10)
+
+print(f"Initial Accuracies -> Train: {init_train_acc*100:.2f}%, Val: {init_val_acc*100:.2f}%, Test: {init_test_acc*100:.2f}%")
+print(f"Initial Accuracies No Pretraining-> Train: {init_train_acc_no_pre*100:.2f}%, Val: {init_val_acc_no_pre*100:.2f}%, Test: {init_test_acc_no_pre*100:.2f}%")
+
+2025-01-22 09:16:35.424630: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-01-22 09:16:35.828483: E external/local_xla/xla/stream_executor/cuda/cuda_fft.cc:477] Unable to register cuFFT factory: Attempting to register factory for plugin cuFFT when one has already been registered
+WARNING: All log messages before absl::InitializeLog() is called are written to STDERR
+E0000 00:00:1737533795.973073   99069 cuda_dnn.cc:8310] Unable to register cuDNN factory: Attempting to register factory for plugin cuDNN when one has already been registered
+E0000 00:00:1737533796.004059   99069 cuda_blas.cc:1418] Unable to register cuBLAS factory: Attempting to register factory for plugin cuBLAS when one has already been registered
+2025-01-22 09:16:36.378264: I tensorflow/core/platform/cpu_feature_guard.cc:210] This TensorFlow binary is optimized to use available CPU instructions in performance-critical operations.
+To enable the following instructions: AVX2 AVX512F AVX512_VNNI FMA, in other operations, rebuild TensorFlow with the appropriate compiler flags.
+Some weights of GPT2ForSequenceClassification were not initialized from the model checkpoint at gpt2 and are newly initialized: ['score.weight']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+
+Initial Accuracies -> Train: 49.38%, Val: 51.88%, Test: 49.38%
+Initial Accuracies No Pretraining-> Train: 53.12%, Val: 45.62%, Test: 49.38%
+
+Strategy C No Pretraining
+# %%
+from src.lora_train import train_model_full_finetune
+import copy
+import time
+import torch 
+import torch.nn as nn
+is_dry=False
+print("=== Strategy C:No Pretraining ===")
+#model_no_pre
+model_no_pre = GPT2ForSequenceClassification(model_config)
+model_no_pre.config.pad_token_id = tokenizer.pad_token_id
+model_no_pre.to(device)
+model_no_pre.eval()
+
+full_tune_params = sum(p.numel() for p in model_no_pre.parameters() if p.requires_grad)
+print(f"[Full Fine-Tuning] Trainable Params: {full_tune_params}")
+
+
+init_accA = calc_accuracy(train_loader, model_no_pre, device, max_batches=1)
+print(f"[Full Fine-Tuning] Initial Train Acc (first 10 batches): {init_accA*100:.2f}%")
+
+#elapsedB, lora_train_losses, lora_val_accs,train_acc_l 
+elapsedA, ft_train_losses, ft_val_accs, train_acc_l  = train_model_full_finetune(
+   model_no_pre, train_loader, val_loader, device, epochs=10, lr=5e-5,is_dry=is_dry
+)
+
+train_accA = calc_accuracy(train_loader, model_no_pre, device,is_dry=is_dry)
+val_accA   = calc_accuracy(val_loader, model_no_pre, device,is_dry=is_dry)
+test_accA  = calc_accuracy(test_loader, model_no_pre, device,is_dry=is_dry)
+print(f"[Full Fine-Tuning] Time: {elapsedA:.2f}s, TrainAcc={train_accA*100:.2f}%, ValAcc={val_accA*100:.2f}%, TestAcc={test_accA*100:.2f}%\n")
+
+=== Strategy C:No Pretraining ===
+[Full Fine-Tuning] Trainable Params: 124441344
+[Full Fine-Tuning] Initial Train Acc (first 10 batches): 37.50%
+Epoch 1/7, step 500/3573, loss = 0.8124
+Epoch 1/7, step 1000/3573, loss = 0.2595
+Epoch 1/7, step 1500/3573, loss = 0.4917
+Epoch 1/7, step 2000/3573, loss = 0.2344
+Epoch 1/7, step 2500/3573, loss = 0.4311
+Epoch 1/7, step 3000/3573, loss = 0.3280
+Epoch 1/7, step 3500/3573, loss = 0.2263
+Epoch 1/7, step 3570/3573, loss = 0.3167Epoch=1, Loss=0.4191, ValAcc=86.19% TrainAcc=80.05%
+Epoch 2/7, step 500/3573, loss = 0.2390
+Epoch 2/7, step 1000/3573, loss = 0.4204
+Epoch 2/7, step 1500/3573, loss = 0.1415
+Epoch 2/7, step 2000/3573, loss = 0.3510
+Epoch 2/7, step 2500/3573, loss = 0.2287
+Epoch 2/7, step 3000/3573, loss = 0.0930
+Epoch 2/7, step 3500/3573, loss = 0.1043
+Epoch 2/7, step 3570/3573, loss = 0.0670Epoch=2, Loss=0.2396, ValAcc=88.29% TrainAcc=90.42%
+Epoch 3/7, step 500/3573, loss = 0.0445
+Epoch 3/7, step 1000/3573, loss = 0.1111
+Epoch 3/7, step 1500/3573, loss = 0.1562
+Epoch 3/7, step 2000/3573, loss = 0.0413
+Epoch 3/7, step 2500/3573, loss = 0.1161
+Epoch 3/7, step 3000/3573, loss = 0.2057
+Epoch 3/7, step 3500/3573, loss = 0.0250
+Epoch 3/7, step 3570/3573, loss = 0.2045Epoch=3, Loss=0.1777, ValAcc=89.09% TrainAcc=92.91%
+Epoch 4/7, step 500/3573, loss = 0.0242
+Epoch 4/7, step 1000/3573, loss = 0.0498
+Epoch 4/7, step 1500/3573, loss = 0.0719
+Epoch 4/7, step 2000/3573, loss = 0.3237
+Epoch 4/7, step 2500/3573, loss = 0.0643
+Epoch 4/7, step 3000/3573, loss = 0.3678
+Epoch 4/7, step 3500/3573, loss = 0.0247
+Epoch 4/7, step 3570/3573, loss = 0.2222Epoch=4, Loss=0.1299, ValAcc=89.22% TrainAcc=94.80%
+Epoch 5/7, step 500/3573, loss = 0.0150
+Epoch 5/7, step 1000/3573, loss = 0.0824
+Epoch 5/7, step 1500/3573, loss = 0.0671
+Epoch 5/7, step 2000/3573, loss = 0.1751
+Epoch 5/7, step 2500/3573, loss = 0.0634
+Epoch 5/7, step 3000/3573, loss = 0.0986
+Epoch 5/7, step 3500/3573, loss = 0.2070
+Epoch 5/7, step 3570/3573, loss = 0.0941Epoch=5, Loss=0.0922, ValAcc=89.43% TrainAcc=96.31%
+Epoch 6/7, step 500/3573, loss = 0.0004
+Epoch 6/7, step 1000/3573, loss = 0.0445
+Epoch 6/7, step 1500/3573, loss = 0.0124
+Epoch 6/7, step 2000/3573, loss = 0.0027
+Epoch 6/7, step 2500/3573, loss = 0.0957
+Epoch 6/7, step 3000/3573, loss = 0.1539
+Epoch 6/7, step 3500/3573, loss = 0.0279
+Epoch 6/7, step 3570/3573, loss = 0.0276Epoch=6, Loss=0.0652, ValAcc=88.21% TrainAcc=97.55%
+Epoch 7/7, step 500/3573, loss = 0.0292
+Epoch 7/7, step 1000/3573, loss = 0.0083
+Epoch 7/7, step 1500/3573, loss = 0.0079
+Epoch 7/7, step 2000/3573, loss = 0.0461
+Epoch 7/7, step 2500/3573, loss = 0.0055
+Epoch 7/7, step 3000/3573, loss = 0.4458
+Epoch 7/7, step 3500/3573, loss = 0.0251
+Epoch 7/7, step 3570/3573, loss = 0.0185Epoch=7, Loss=0.0453, ValAcc=88.54% TrainAcc=98.34%
+[Full Fine-Tuning] Time: 1861.71s, TrainAcc=99.48%, ValAcc=88.54%, TestAcc=78.67%
+
+
