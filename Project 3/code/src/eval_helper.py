@@ -13,6 +13,7 @@ path_to_lora = os.path.join(path_to_save_folder,"lora")
 path_to_partial = os.path.join(path_to_save_folder,"partial")
 path_to_head_only = os.path.join(path_to_save_folder,"head")
 path_to_full = os.path.join(path_to_save_folder,"full")
+path_to_no_pre = os.path.join(path_to_save_folder,"no_pre")
 
 # Example 
 #    write_list_to_file("losses",train_losses,path_to_save_folder)

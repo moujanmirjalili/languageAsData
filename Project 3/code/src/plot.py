@@ -74,6 +74,6 @@ def plot_multiple(first_graphs,label1,second_graphs,label2,axLabel1 = None, axLa
         #plt.ylim(bottom=0)
     plt.legend()
     if save:
-        plt.savefig('temp.png')
+        plt.savefig('temp.svg')
     plt.show()
     
